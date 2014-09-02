@@ -225,7 +225,7 @@ class ViewController: UIViewController {
     }
     
     
-    func getIndex(i : Int, j : Int) -> Int
+    final func getIndex(i : Int, j : Int) -> Int
     {
         return i + (5000) * j;
     }

@@ -23,8 +23,8 @@ class ViewController: UIViewController {
             for var j = 1; j < 5000 - 1; j++
             {
                 let index = i + 5000 * j
-                let left = getIndex(i - 1, j: j)
-                let right = (i - 1) + 5000 * j
+                let left = (i - 1) + 5000 * j
+                let right = (i + 1) + 5000 * j
                 let top = (i + 1) + 5000 * j
                 let bottom = i + 5000 * (j + 1)
                 

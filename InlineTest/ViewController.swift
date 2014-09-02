@@ -9,26 +9,24 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    let GRID_WIDTH : Int = 5000
-    
+
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
-        let testArray = [Double](count: GRID_WIDTH * GRID_WIDTH, repeatedValue: 123.456);
+        let testArray = [Double](count: 5000 * 5000, repeatedValue: 123.456);
         
         var startTime : CFAbsoluteTime = CFAbsoluteTimeGetCurrent();
         
-        for var i = 1; i < GRID_WIDTH - 1; i++
+        for var i = 1; i < 5000 - 1; i++
         {
-            for var j = 1; j < GRID_WIDTH - 1; j++
+            for var j = 1; j < 5000 - 1; j++
             {
-                let index = i + GRID_WIDTH * j
+                let index = i + 5000 * j
                 let left = getIndex(i - 1, j: j)
-                let right = (i - 1) + GRID_WIDTH * j
-                let top = (i + 1) + GRID_WIDTH * j
-                let bottom = i + GRID_WIDTH * (j + 1)
+                let right = (i - 1) + 5000 * j
+                let top = (i + 1) + 5000 * j
+                let bottom = i + 5000 * (j + 1)
                 
                 let north = testArray[top]
                 let south = testArray[bottom]
@@ -45,9 +43,9 @@ class ViewController: UIViewController {
         
         startTime = CFAbsoluteTimeGetCurrent();
         
-        for var i = 1; i < GRID_WIDTH - 1; i++
+        for var i = 1; i < 5000 - 1; i++
         {
-            for var j = 1; j < GRID_WIDTH - 1; j++
+            for var j = 1; j < 5000 - 1; j++
             {
                 let index = getIndex(i, j: j)
                 let left = getIndex(i - 1, j: j)
@@ -70,9 +68,9 @@ class ViewController: UIViewController {
         
         startTime = CFAbsoluteTimeGetCurrent();
         
-        for var i = 1; i < GRID_WIDTH - 1; i++
+        for var i = 1; i < 5000 - 1; i++
         {
-            for var j = 1; j < GRID_WIDTH - 1; j++
+            for var j = 1; j < 5000 - 1; j++
             {
                 let index = ViewController.staticGetIndex(i, j: j)
                 let left = ViewController.staticGetIndex(i - 1, j: j)
@@ -101,13 +99,13 @@ class ViewController: UIViewController {
     
     func getIndex(i : Int, j : Int) -> Int
     {
-        return i + (GRID_WIDTH) * j;
+        return i + (5000) * j;
     }
     
     class func staticGetIndex(i : Int, j : Int) -> Int
     {
         
-        return i + (1000) * j;
+        return i + (5000) * j;
     }
 
 }

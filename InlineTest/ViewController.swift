@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         
         var startTime : CFAbsoluteTime?;
         
-        let writeToArray = false;
+        let writeToArray = true;
         
         var inlineTotal : Double = 0;
         var instanceTotal : Double = 0;

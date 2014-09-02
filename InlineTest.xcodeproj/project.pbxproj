@@ -12,6 +12,7 @@
 		3E9D667019B5788A001EC9B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E9D666E19B5788A001EC9B1 /* Main.storyboard */; };
 		3E9D667219B5788A001EC9B1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E9D667119B5788A001EC9B1 /* Images.xcassets */; };
 		3E9D667E19B5788A001EC9B1 /* InlineTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9D667D19B5788A001EC9B1 /* InlineTestTests.swift */; };
+		3E9D668819B593C6001EC9B1 /* ArrayWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9D668719B593C6001EC9B1 /* ArrayWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		3E9D667719B5788A001EC9B1 /* InlineTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InlineTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E9D667C19B5788A001EC9B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E9D667D19B5788A001EC9B1 /* InlineTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineTestTests.swift; sourceTree = "<group>"; };
+		3E9D668719B593C6001EC9B1 /* ArrayWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				3E9D666E19B5788A001EC9B1 /* Main.storyboard */,
 				3E9D667119B5788A001EC9B1 /* Images.xcassets */,
 				3E9D666819B5788A001EC9B1 /* Supporting Files */,
+				3E9D668719B593C6001EC9B1 /* ArrayWrapper.swift */,
 			);
 			path = InlineTest;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			files = (
 				3E9D666D19B5788A001EC9B1 /* ViewController.swift in Sources */,
 				3E9D666B19B5788A001EC9B1 /* AppDelegate.swift in Sources */,
+				3E9D668819B593C6001EC9B1 /* ArrayWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +345,7 @@
 				INFOPLIST_FILE = InlineTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
 		};
